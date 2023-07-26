@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="UniversityAdministration.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>University Administration</title>
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <script src="assets/js/scripts.js"></script>
+    <style>
+        .met_ort {
+            text-align: center;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light">University Administration</div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/University/UniversityList.aspx">University</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/Faculty/FacultyList.aspx">Faculty</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/Department/DepartmentList.aspx">Department</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/Professor/ProfessorList.aspx">Professor</a>
+            </div>
+        </div>
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <h1 style="margin-left: 450px">Yahya Eraltay</h1>
+                </div>
+            </nav>
+            <form id="form1" runat="server">
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
